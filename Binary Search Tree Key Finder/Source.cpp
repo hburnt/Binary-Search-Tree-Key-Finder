@@ -77,7 +77,9 @@ std::string BinarySearchTree::find(int key) const {
 }
 
 std::string BinarySearchTree::findHelper(int key, Node* n) const {
-
+    // Check if n matches the key we want to find
+    // Check if the key exists in the tree at all
+    // Recursively check the left and right subtrees for the key
     if (key == n->key) {
         std::string keyValue = n->val;
         return keyValue;
